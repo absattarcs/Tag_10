@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Graphic-Medium";
+  src: url('../fonts/Graphik-Medium.ttf');
+}
+
+@font-face {
+  font-family: "Graphic-Regular";
+  src: url('../fonts/Graphik-Regular.woff');
+}
+
+@font-face {
+  font-family: "Theinhardt-LT";
+  src: url('../fonts/Theinhardt-Lt.woff');
+}
+
+@font-face {
+  font-family: "TiemposHeadline-Semibold";
+  src: url('../fonts/TiemposHeadline-Semibold.woff');
+}
+@font-face {
+  font-family: "Inter";
+  src: url('../fonts/Inter.ttf');
+}
+ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color_black: #000000;
+  --color_white: #f1f1f4;
+  --primary_black:#2B2C2E;
+  --primary_grey:#9FA2A7;
+  --secondary_grey:#848689;
+  --grey-dark:#48494C;
+  --transition: 0.4s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color_black);
+}
+
+body {
+  background-color: var(--color_white);
+}
+
+header {
+  width: 80%;
+  margin: 30px auto 0 auto;
+}
+
+.menu {
+  gap: 23px;
+}
+
+.menu a {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.logo {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.btn_solid {
+  border-radius: 4px;
+  border: 1px solid var(--grey_dark);
+  padding: 7px 57px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn_solid:hover,
+.btn_solid:focus {
+  background-color: var(--primary_black);
+  color: var(--color_white);
+}
+
+.head-top {
+  width: 100vw;
+  height: 550px;
+  background: url('../img/home_hero.png') no-repeat;
+  background-size: contain;
+  margin-top: 80px;
+}
+
+.head-top h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 47px;
+  text-align: center;
+}
+
+.top_second {
+  padding: 170px 0 154px 105px;
+}
+
+.top_second p {
+  width: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 21px;
+  line-height: 32px;
+}
+
+.price_box {
+  font-family: 'Inter', sans-serif;
+  padding: 45px 50px 21px 50px;
+}
+
+.price_box p {
+  width: fit-content;
+}
+
+.price_box h3 {
+  font-size: 61px;
+  font-weight: 700;
+  line-height: 25px;
+  align-self: flex-start;
+  height: 60px;
+}
+
+.price_box p {
+  color: var(--primary_grey);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+
